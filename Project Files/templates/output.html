@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result - NutriGaze</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><a href="/">Home</a></div>
+        <ul class="nav-links">
+            <li><a href="/#about">About</a></li>
+            <li><a href="/predict">Predict</a></li>
+            <li><a href="/#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="output-box">
+        <h2>Prediction Result:</h2>
+        <p><strong>{{ prediction_text }}</strong></p>
+        <img src="{{ image_path }}" alt="Uploaded Image">
+        <br><br>
+        <a href="/predict">Test Another Image</a>
+    </div>
+
+</body>
+</html>
