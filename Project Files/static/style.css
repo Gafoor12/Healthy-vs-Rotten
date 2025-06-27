@@ -1,0 +1,161 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 12px 50px;
+    display: flex;
+    justify-content: center;  /* ✅ Center all navbar items horizontally */
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+
+.navbar .logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;                /* ✅ Space between nav buttons */
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.navbar .nav-links li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 5px;
+}
+
+.navbar .nav-links li a:hover {
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('/static/uploads/hero-banner.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+    color: #ffffff;
+    backdrop-filter: brightness(0.85);
+}
+
+.hero-text h1 {
+    color:black;
+    font-size: 48px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color:black;
+}
+
+.hero-text .highlight {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 14px 35px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.hero-button:hover {
+    background-color: #388E3C;
+    transform: translateY(-2px);
+}
+
+/* Sections (About, Contact, etc) */
+section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+section#about, section#contact {
+    background-color: #ffffff;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #555;
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Upload Box for Predict Page */
+.upload-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+/* Output Box for Result Page */
+.output-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin: 120px auto;
+    text-align: center;
+}
+
+/* Limit Image Size on Output Page */
+.output-box img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
